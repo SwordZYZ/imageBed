@@ -34,9 +34,9 @@ jobs:
           
           # 显式列出要保留的文件/目录
           # 这样写比一行长命令更容易维护
-          # 只保留 forLLM, README.md, .git (版本控制), .github (Action 脚本)
+          # 只保留 forLLM, icons, README.md, .git (版本控制), .github (Action 脚本)
           # 不要去手动删 .github 下面的东西，否则脚本会自杀
-          KEEP_FILES="forLLM|README.md|.git|.github"
+          KEEP_FILES="forLLM|icons|README.md|.git|.github"
           
           # 执行删除
           rm -rf !($KEEP_FILES)
